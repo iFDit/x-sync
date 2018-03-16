@@ -1,8 +1,8 @@
 
-function sync(gen) {
-  const start = gen()
+function sync(gen, ...rest) {
+  const start = gen(...rest)
   let promise = null
-  
+
   const run = (value) => {
     const next = start.next(value)
     const nextValue = next.value
@@ -31,3 +31,5 @@ function sync(gen) {
 
   return run()
 }
+
+module.exports = sync
