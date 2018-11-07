@@ -1,2 +1,2 @@
 # x-sync
-基于ES6 Generator实现的流程控制
+base on ES6 Generator
